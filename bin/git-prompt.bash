@@ -21,7 +21,7 @@ function parse_git_branch {
   remote_pattern_behind="Your branch is behind '.*' by ([0-9]*) "
   diverge_pattern="Your branch and (.*) have diverged"
   
-  if [[ ! ${git_status}} =~ "working directory clean" ]]; then
+  if [[ ! ${git_status}} =~ "working tree clean" ]]; then
     state=" ${WHITE}*"
   fi
   # add an else if or two here if you want to get more specific
